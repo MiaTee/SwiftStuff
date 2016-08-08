@@ -2,8 +2,8 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "addToCartImg.jpg",
-      "scale" : "1x"
+      "filename" : "phone-fullscreen1@2x.png",
+      "scale" : "2x"
     }
   ],
   "info" : {
