@@ -14,6 +14,7 @@
 		B7328B901D582324007532BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7328B8E1D582324007532BD /* LaunchScreen.storyboard */; };
 		B7328B981D5A7982007532BD /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7328B971D5A7982007532BD /* ProductViewController.swift */; };
 		B7328B9A1D5A8B03007532BD /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7328B991D5A8B03007532BD /* ContactViewController.swift */; };
+		B7328B9C1D5AA017007532BD /* ProductTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7328B9B1D5AA017007532BD /* ProductTableTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		B7328B911D582324007532BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7328B971D5A7982007532BD /* ProductViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		B7328B991D5A8B03007532BD /* ContactViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		B7328B9B1D5AA017007532BD /* ProductTableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				B7328B851D582324007532BD /* AppDelegate.swift */,
 				B7328B871D582324007532BD /* ViewController.swift */,
 				B7328B891D582324007532BD /* Main.storyboard */,
+				B7328B9B1D5AA017007532BD /* ProductTableTableViewController.swift */,
 				B7328B8C1D582324007532BD /* Assets.xcassets */,
 				B7328B8E1D582324007532BD /* LaunchScreen.storyboard */,
 				B7328B911D582324007532BD /* Info.plist */,
@@ -143,6 +146,7 @@
 			files = (
 				B7328B981D5A7982007532BD /* ProductViewController.swift in Sources */,
 				B7328B9A1D5A8B03007532BD /* ContactViewController.swift in Sources */,
+				B7328B9C1D5AA017007532BD /* ProductTableTableViewController.swift in Sources */,
 				B7328B881D582324007532BD /* ViewController.swift in Sources */,
 				B7328B861D582324007532BD /* AppDelegate.swift in Sources */,
 			);
