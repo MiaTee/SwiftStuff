@@ -21,7 +21,7 @@ class ContactViewController: UIViewController {
        
     
     }
-    //we set the frame but we need to tell the subview how big the content is. Since, we set the height in the storyboard to 800 we need to do the same in the code
+    //we set the frame but we need to tell the subview how big the content is. Since, we set the height in the storyboard to 800 we need to do the same in the code. Everytime we change the size of subviews in code we should do it in the function below
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
         scrollView.contentSize = CGSizeMake(375,800)
