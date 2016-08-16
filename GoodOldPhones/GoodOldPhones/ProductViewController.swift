@@ -13,6 +13,7 @@ class ProductViewController: UIViewController {
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productImageView: UIImageView!
     var productName: String?
+    var productImage: UIImage?
     
 
     
@@ -20,7 +21,7 @@ class ProductViewController: UIViewController {
 
         super.viewDidLoad()
         productNameLabel.text = productName
-        productImageView.image = UIImage(named:"phone-fullscreen3")
+        productImageView.image = productImage
         // Do any additional setup after loading the view.
     }
 
