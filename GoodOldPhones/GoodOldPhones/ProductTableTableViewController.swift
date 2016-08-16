@@ -19,7 +19,7 @@ class ProductTableTableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("ProductsCell", forIndexPath: indexPath)
         
             cell.textLabel?.text = "Hello World!"
-            cell.imageView?.image = UIImage(named: "imageCell1")
+            cell.imageView?.image = UIImage(named: "image-cell1")
         
         return cell
     }
