@@ -90,7 +90,7 @@
                             <outlet property="delegate" destination="BZL-f6-Mco" id="vjz-hm-Fdd"/>
                         </connections>
                     </tableView>
-                    <tabBarItem key="tabBarItem" title="CART" id="Dre-as-UJ1"/>
+                    <tabBarItem key="tabBarItem" title="CART" image="icon-tabbar-cart" id="Dre-as-UJ1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFC-2I-ISy" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -110,7 +110,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="CONTACT" image="header-contact" id="m0K-ES-GHp"/>
+                    <tabBarItem key="tabBarItem" title="CONTACT" image="icon-tabbar-contact" id="m0K-ES-GHp"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="scrollView" destination="JW4-dn-fN1" id="0aY-7e-jLo"/>
@@ -227,7 +227,7 @@
         <scene sceneID="7P4-FJ-tvm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w6H-PB-Wpi" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="PRODUCT" id="rRh-VQ-UGz"/>
+                    <tabBarItem key="tabBarItem" title="PRODUCT" image="icon-tabbar-store" id="rRh-VQ-UGz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="asG-G6-ju6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -249,5 +249,8 @@
         <image name="icon-about-email" width="34" height="34"/>
         <image name="icon-about-phone" width="34" height="34"/>
         <image name="icon-about-website" width="34" height="34"/>
+        <image name="icon-tabbar-cart" width="24" height="19"/>
+        <image name="icon-tabbar-contact" width="29" height="19"/>
+        <image name="icon-tabbar-store" width="34" height="19"/>
     </resources>
 </document>
