@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="w6H-PB-Wpi">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="gbp-ek-uEO">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -47,7 +47,57 @@
             </objects>
             <point key="canvasLocation" x="846.5" y="397.5"/>
         </scene>
-        <!--Contact View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="4qM-lP-7OY">
+            <objects>
+                <tabBarController id="gbp-ek-uEO" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="cKc-Sk-gWD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="H4o-eC-gnQ" kind="relationship" relationship="viewControllers" id="Lxj-Kt-dkO"/>
+                        <segue destination="w6H-PB-Wpi" kind="relationship" relationship="viewControllers" id="1cs-Dx-lpw"/>
+                        <segue destination="BZL-f6-Mco" kind="relationship" relationship="viewControllers" id="Twb-Fo-g9p"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sPg-dh-Cu0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-724.5" y="721.5"/>
+        </scene>
+        <!--CART-->
+        <scene sceneID="m4d-FS-P5k">
+            <objects>
+                <tableViewController id="BZL-f6-Mco" customClass="cartUITableViewController" customModule="GoodOldPhones" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sQg-5f-7tx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="6af-QE-e1u">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6af-QE-e1u" id="fAH-Na-dok">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BZL-f6-Mco" id="lIo-I3-MVg"/>
+                            <outlet property="delegate" destination="BZL-f6-Mco" id="vjz-hm-Fdd"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="CART" id="Dre-as-UJ1"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OFC-2I-ISy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-130.5" y="1219.5"/>
+        </scene>
+        <!--CONTACT-->
         <scene sceneID="26Y-pV-qaG">
             <objects>
                 <viewController id="H4o-eC-gnQ" customClass="ContactViewController" customModule="GoodOldPhones" customModuleProvider="target" sceneMemberID="viewController">
@@ -60,6 +110,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="CONTACT" image="header-contact" id="m0K-ES-GHp"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="scrollView" destination="JW4-dn-fN1" id="0aY-7e-jLo"/>
@@ -172,10 +223,11 @@
             </objects>
             <point key="canvasLocation" x="401.5" y="397.5"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--PRODUCT-->
         <scene sceneID="7P4-FJ-tvm">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="w6H-PB-Wpi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="PRODUCT" id="rRh-VQ-UGz"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="asG-G6-ju6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>

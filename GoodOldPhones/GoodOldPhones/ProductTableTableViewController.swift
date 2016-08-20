@@ -10,11 +10,34 @@ import UIKit
 
 class ProductTableTableViewController: UITableViewController {
    
-    var productNames: [String]?
-    var prodcutImages: [UIImage]?
+    //var productNames: [String]?
+    var products: [Product]?
     //View DidLoad
     override func viewDidLoad() {
-        productNames = ["1907 Wall Set", "1921 Dial Phone", "1937 Desk Set", " 1984 Motorola Portable"]
+        
+        let product1 = Product()
+        let product2 = Product()
+        let product3 = Product()
+        let product4 = Product()
+        
+        product1.name = "1907 Wall Set"
+        product1.productImage = "phone-fullscreen1"
+        product1.cellImage = "image-cell1"
+        
+        product2.name = "1921 Dial Phone"
+        product2.productImage = "phone-fullscreen2"
+        product2.cellImage = "image-cell2"
+        
+        product3.name = "1937 Desk Set"
+        product3.productImage = "phone-fullscreen3"
+        product3.cellImage = "image-cell3"
+        
+        product4.name = "1984 Motorola Portable"
+        product4.productImage = "phone-fullscreen4"
+        product4.cellImage = "image-cell4"
+        
+        //productNames = ["1907 Wall Set", "1921 Dial Phone", "1937 Desk Set", " 1984 Motorola Portable"]
+        products = [product1, product2, product3, product4]
     
     }
     
@@ -66,7 +89,7 @@ class ProductTableTableViewController: UITableViewController {
             {
                 return
             }
-                productVC?.productName = productNames?[indexPath.row]
+                productVC?.product = products?[indexPath.row]
         }
         
         
@@ -74,9 +97,9 @@ class ProductTableTableViewController: UITableViewController {
     
     //here we are setting how many initial rows we will have
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let pNames = productNames
+        if let p = products
         {
-            return pNames.count
+            return p.count
         }
        return 0
     }
@@ -84,14 +107,21 @@ class ProductTableTableViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("ProductsCell", forIndexPath: indexPath)
-       let productName = productNames?[indexPath.row]
-        if let pNames = productName
+       let product = products?[indexPath.row]
+        if let p = product
         {
-           cell.textLabel?.text = pNames
+           cell.textLabel?.text = p.name
+            if let i = p.cellImage
+            {
+                
+                cell.imageView?.image = UIImage(named:i)
+            }
+            
+            
             
         }
         
-                    cell.imageView?.image = UIImage(named: "image-cell1")
+        
         
         return cell
     }
