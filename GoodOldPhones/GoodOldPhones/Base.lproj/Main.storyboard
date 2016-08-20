@@ -27,12 +27,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61h-43-mS5">
-                                <rect key="frame" x="108" y="144" width="158" height="38"/>
+                                <rect key="frame" x="108" y="174" width="158" height="38"/>
                                 <state key="normal" title="Button" image="button-addtocart"/>
                                 <connections>
                                     <action selector="addToCartButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JyU-Uo-fVu"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Product Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QJ0-bA-g1F">
+                                <rect key="frame" x="113" y="124" width="143" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -41,6 +47,7 @@
                     <connections>
                         <outlet property="productImageView" destination="0yN-nd-wXq" id="DVP-l1-91j"/>
                         <outlet property="productNameLabel" destination="ZDs-Mo-fH6" id="Be9-d9-YEm"/>
+                        <outlet property="productPriceLabel" destination="QJ0-bA-g1F" id="gYe-PG-pdZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -70,7 +77,7 @@
         <!--CART-->
         <scene sceneID="m4d-FS-P5k">
             <objects>
-                <tableViewController id="BZL-f6-Mco" customClass="cartUITableViewController" customModule="GoodOldPhones" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="BZL-f6-Mco" customClass="CartUITableViewController" customModule="GoodOldPhones" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="sQg-5f-7tx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

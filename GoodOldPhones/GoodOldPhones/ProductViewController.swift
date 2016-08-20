@@ -12,6 +12,7 @@ class ProductViewController: UIViewController {
     
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productImageView: UIImageView!
+    @IBOutlet weak var productPriceLabel: UILabel!
     var product: Product?
     var productImage: UIImage?
     
@@ -26,6 +27,10 @@ class ProductViewController: UIViewController {
             if let i = p.productImage
             {
                 productImageView.image = UIImage(named:i)
+             if let prs = p.productPrice
+             {
+                productPriceLabel.text = "$" + String(prs)
+                }
             }
         }
       

@@ -15,4 +15,5 @@ class Product
     var name: String?
     var productImage: String?
     var cellImage: String?
+    var productPrice: Double?
 }

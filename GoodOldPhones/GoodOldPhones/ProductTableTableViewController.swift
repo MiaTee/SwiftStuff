@@ -23,18 +23,22 @@ class ProductTableTableViewController: UITableViewController {
         product1.name = "1907 Wall Set"
         product1.productImage = "phone-fullscreen1"
         product1.cellImage = "image-cell1"
+        product1.productPrice = 120.00
         
         product2.name = "1921 Dial Phone"
         product2.productImage = "phone-fullscreen2"
         product2.cellImage = "image-cell2"
+        product2.productPrice = 349.99
         
         product3.name = "1937 Desk Set"
         product3.productImage = "phone-fullscreen3"
         product3.cellImage = "image-cell3"
+        product3.productPrice = 22.50
         
         product4.name = "1984 Motorola Portable"
         product4.productImage = "phone-fullscreen4"
         product4.cellImage = "image-cell4"
+        product4.productPrice = 88.00
         
         //productNames = ["1907 Wall Set", "1921 Dial Phone", "1937 Desk Set", " 1984 Motorola Portable"]
         products = [product1, product2, product3, product4]
@@ -48,7 +52,8 @@ class ProductTableTableViewController: UITableViewController {
         if segue.identifier == "ShowProductDetails"
         {
             //create a variable to pass the right view controller to
-            let productVC = segue.destinationViewController as? ProductViewController
+            let productVC = segue.destinationViewController as?
+                ProductViewController
             //pass desired data to desired view controller
             // below is hard coding the productname
             //productVC?.productName = "Really OLD PHONE!!"
@@ -58,7 +63,7 @@ class ProductTableTableViewController: UITableViewController {
             //third use that indexPath to get the product name from the array
             //send the product name to the product view controller
             
-         productVC?.productImage = UIImage(named:"phone-fullscreen3")
+  productVC?.productImage = UIImage(named:"phone-fullscreen3")
             //sender is the cell that caused the segue to happen
             // grab that cell in the variable cell
 //            let cell = sender as? UITableViewCell

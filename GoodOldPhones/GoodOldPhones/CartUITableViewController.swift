@@ -1,5 +1,5 @@
 //
-//  cartUITableViewController.swift
+//  CartUITableViewController.swift
 //  GoodOldPhones
 //
 //  Created by Selma NB on 8/19/16.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class cartUITableViewController: UITableViewController {
+class CartUITableViewController: UITableViewController {
 
 }
