@@ -18,6 +18,7 @@ class Order: NSObject, NSCoding {
     //in init we need to initialze every variable in the class
     required init?(coder aDecoder: NSCoder) {
         self.product = aDecoder.decodeObjectForKey("product") as? Product
+        
         super.init()
     }
     func encodeWithCoder(aCoder: NSCoder) {

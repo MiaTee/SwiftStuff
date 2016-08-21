@@ -28,16 +28,18 @@ class Orders: NSObject, NSCoding {
     //we also need to create archiveFilePath
     
     class func archiveFilePath() -> String {
-        let documentsDirectory = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains: .UserDomainMask)[0]
+        let documentsDirectory = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains:.UserDomainMask)[0]
         return documentsDirectory.URLByAppendingPathComponent("cart.archive").path!
     }
     
     class func readOrdersFromArchive() -> [Order]?
     {
+        
         return NSKeyedUnarchiver.unarchiveObjectWithFile(archiveFilePath()) as? [Order]
         
     }
     class func saveOrdersToArchive(orders:[Order]) -> Bool {
         return NSKeyedArchiver.archiveRootObject(orders, toFile: archiveFilePath())
 }
+    
 }
