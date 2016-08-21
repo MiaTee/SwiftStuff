@@ -34,10 +34,14 @@ class CartUITableViewController: UITableViewController {
         product.cellImage = "image-cell1"
         product.productPrice = 120.00
         
+        
+        
         //Now we create new variable that holds Order object
         //Order object holds product object
         let order = Order()
         order.product = product
+        //read orders from disk
+        
         //putting the order in ordersInCart array
         ordersInCart = [order]
         //after you update the array
@@ -72,9 +76,11 @@ class CartUITableViewController: UITableViewController {
             //our data source is the ordersInCart array
             ordersInCart?.removeAtIndex(indexPath.row)
             //the below function will show you the animation when deleting the row
+            //remove from array and save the new array to disk
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-            updateTotal()
+            
         }
+        updateTotal()
     }
     //function that will calculate the total
     //loop in each element of array
