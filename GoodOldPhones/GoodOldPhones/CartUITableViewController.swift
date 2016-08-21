@@ -13,8 +13,14 @@ class CartUITableViewController: UITableViewController {
     //orders is a an array that holds order objects 
     //each order will have product information
     var ordersInCart: [Order]?
+    
+    @IBOutlet weak var calculatedTotalLabel: UILabel!
+    
+    @IBOutlet var headerViewOutlet: UIView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        //how to call another view
+        tableView.tableHeaderView = headerViewOutlet
     }
 //because we are using tab controller view we want to make sure our view controller will refresh when we go from one vc to another
     
@@ -34,6 +40,9 @@ class CartUITableViewController: UITableViewController {
         order.product = product
         //putting the order in ordersInCart array
         ordersInCart = [order]
+        //after you update the array
+        //update the total price
+        updateTotal()
     }
     
     
@@ -59,15 +68,38 @@ class CartUITableViewController: UITableViewController {
     //if you want to delete a row...meaning deleting a product 
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
         if editingStyle == .Delete {
-            //delete the row from the data source
+            //delete the row from the data source...hint hint
+            //our data source is the ordersInCart array
             ordersInCart?.removeAtIndex(indexPath.row)
+            //the below function will show you the animation when deleting the row
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
+            updateTotal()
+        }
+    }
+    //function that will calculate the total
+    //loop in each element of array
+    //add it to the total
+    
+        func updateTotal() -> Void
+        {
+            //unwrap optional data source array here
+            if let orders = ordersInCart{
+                var total: Double = 0.0
+                for order in orders {
+                    if let price = order.product?.productPrice {
+                    total = total + price
+                }
+            
+                
+            }
+                calculatedTotalLabel.text = "$" + String (total)
+            
         }
     
-    }
+    
   
 }
 
     
     
-
+}

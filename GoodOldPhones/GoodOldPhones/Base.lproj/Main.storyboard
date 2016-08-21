@@ -99,8 +99,31 @@
                     </tableView>
                     <tabBarItem key="tabBarItem" title="CART" image="icon-tabbar-cart" id="Dre-as-UJ1"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="calculatedTotalLabel" destination="1Nc-Rl-CEd" id="5cU-On-0iT"/>
+                        <outlet property="headerViewOutlet" destination="104-pT-IHf" id="m83-SH-kXd"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OFC-2I-ISy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="104-pT-IHf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejM-Zx-rUS">
+                            <rect key="frame" x="47" y="76" width="85" height="21"/>
+                            <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="20"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calculated Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Nc-Rl-CEd">
+                            <rect key="frame" x="156" y="76" width="138" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.028725340962409973" green="0.047118701040744781" blue="0.029995162039995193" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="-130.5" y="1219.5"/>
         </scene>
@@ -248,6 +271,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rrg-pg-Ngg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-131" y="397"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="fMO-oK-peM">
+            <objects>
+                <viewController id="UXf-Pz-8fD" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GSb-fQ-773"/>
+                        <viewControllerLayoutGuide type="bottom" id="NTk-kR-Iop"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6bj-Fq-PTO">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vS7-Jj-XXa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
         </scene>
     </scenes>
     <resources>
