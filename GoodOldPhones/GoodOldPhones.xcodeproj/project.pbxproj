@@ -66,20 +66,44 @@
 		B7328B841D582324007532BD /* GoodOldPhones */ = {
 			isa = PBXGroup;
 			children = (
-				B7CD76EE1D680E890095C6E2 /* Order.swift */,
-				B7CD76EC1D680E770095C6E2 /* Orders.swift */,
 				B7328B851D582324007532BD /* AppDelegate.swift */,
-				B7CD76E61D63E7430095C6E2 /* Product.swift */,
-				B7328B891D582324007532BD /* Main.storyboard */,
-				B7328B8E1D582324007532BD /* LaunchScreen.storyboard */,
-				B7CD76EA1D67D3650095C6E2 /* CartUITableViewController.swift */,
-				B7328B9B1D5AA017007532BD /* ProductTableTableViewController.swift */,
-				B7328B971D5A7982007532BD /* ProductViewController.swift */,
-				B7328B991D5A8B03007532BD /* ContactViewController.swift */,
+				B7FDE9FC1D6A8FB400B75C09 /* Storyboards */,
+				B7FDE9FB1D6A8F8200B75C09 /* UIViewController */,
+				B7FDE9F91D6A8F3800B75C09 /* Model */,
 				B7328B8C1D582324007532BD /* Assets.xcassets */,
 				B7328B911D582324007532BD /* Info.plist */,
 			);
 			path = GoodOldPhones;
+			sourceTree = "<group>";
+		};
+		B7FDE9F91D6A8F3800B75C09 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B7CD76EE1D680E890095C6E2 /* Order.swift */,
+				B7CD76E61D63E7430095C6E2 /* Product.swift */,
+				B7CD76EC1D680E770095C6E2 /* Orders.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		B7FDE9FB1D6A8F8200B75C09 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				B7CD76EA1D67D3650095C6E2 /* CartUITableViewController.swift */,
+				B7328B9B1D5AA017007532BD /* ProductTableTableViewController.swift */,
+				B7328B971D5A7982007532BD /* ProductViewController.swift */,
+				B7328B991D5A8B03007532BD /* ContactViewController.swift */,
+			);
+			name = UIViewController;
+			sourceTree = "<group>";
+		};
+		B7FDE9FC1D6A8FB400B75C09 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B7328B8E1D582324007532BD /* LaunchScreen.storyboard */,
+				B7328B891D582324007532BD /* Main.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
