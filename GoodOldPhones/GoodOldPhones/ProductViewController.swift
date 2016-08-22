@@ -30,7 +30,8 @@ class ProductViewController: UIViewController {
              if let prs = p.productPrice
              {
                 productPriceLabel.text = "$" + String(prs)
-                }
+                
+             }
             }
         }
       
@@ -69,6 +70,7 @@ class ProductViewController: UIViewController {
       
         if let orders = ordersInCart {
          Orders.saveOrdersToArchive(orders)
+            print(orders[0])
            
             
         }

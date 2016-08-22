@@ -29,10 +29,10 @@ class Product: NSObject, NSCoding
         super.init()
     }
     func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeConditionalObject(name, forKey: "name")
-        aCoder.encodeConditionalObject(productImage, forKey: "productImage")
-        aCoder.encodeConditionalObject(cellImage, forKey: "cellImage")
-        aCoder.encodeConditionalObject(productPrice, forKey: "productPrice")
+        aCoder.encodeObject(name, forKey: "name")
+        aCoder.encodeObject(productImage, forKey: "productImage")
+        aCoder.encodeObject(cellImage, forKey: "cellImage")
+        aCoder.encodeObject(productPrice, forKey: "productPrice")
     }
     
 

@@ -19,10 +19,11 @@ class Orders: NSObject, NSCoding {
     //in init we need to initialze every variable in the class
     required init?(coder aDecoder: NSCoder) {
         self.orders = aDecoder.decodeObjectForKey("orders") as? [Order]
-        super.init()
+       
+        //super.init()
     }
     func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeConditionalObject(orders, forKey: "orders")
+        aCoder.encodeObject(orders, forKey: "orders")
     }
     //Create a class method to read data from disk
     //we also need to create archiveFilePath

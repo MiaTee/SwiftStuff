@@ -49,15 +49,14 @@ class CartUITableViewController: UITableViewController {
         {
             ordersInCart = []
         }
-        
         tableView.reloadData()
+        //tableView.reloadData()
         //putting the order in ordersInCart array
         //ordersInCart = [order]
         //after you update the array
         //update the total price
         updateTotal()
        
-        
         
     }
     

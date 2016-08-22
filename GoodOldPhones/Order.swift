@@ -22,7 +22,7 @@ class Order: NSObject, NSCoding {
         super.init()
     }
     func encodeWithCoder(aCoder: NSCoder) {
-        aCoder.encodeConditionalObject(product, forKey: "product")
+        aCoder.encodeObject(product, forKey: "product")
     }
     
 
