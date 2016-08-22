@@ -30,7 +30,7 @@ class Orders: NSObject, NSCoding {
     
     class func archiveFilePath() -> String {
         let documentsDirectory = NSFileManager.defaultManager().URLsForDirectory(.DocumentDirectory, inDomains:.UserDomainMask)[0]
-        return documentsDirectory.URLByAppendingPathComponent("cart.archive").path!
+        return documentsDirectory.URLByAppendingPathComponent("cartItems.archive").path!
     }
     
     class func readOrdersFromArchive() -> [Order]?

@@ -22,6 +22,8 @@ class CartUITableViewController: UITableViewController {
         //how to call another view
         tableView.tableHeaderView = headerViewOutlet
         
+       
+        
     }
 //because we are using tab controller view we want to make sure our view controller will refresh when we go from one vc to another
     
@@ -49,6 +51,7 @@ class CartUITableViewController: UITableViewController {
         {
             ordersInCart = []
         }
+        
         tableView.reloadData()
         //tableView.reloadData()
         //putting the order in ordersInCart array
@@ -76,7 +79,7 @@ class CartUITableViewController: UITableViewController {
             cell.textLabel?.text = order.product?.name
             
             cell.detailTextLabel?.text = String(order.product?.productPrice)
-            
+           
             
             
         }
@@ -93,7 +96,10 @@ class CartUITableViewController: UITableViewController {
             //the below function will show you the animation when deleting the row
             //remove from array and save the new array to disk
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-            
+           if let orders = ordersInCart
+           {
+            Orders.saveOrdersToArchive(orders)
+            }
         }
         updateTotal()
     }
