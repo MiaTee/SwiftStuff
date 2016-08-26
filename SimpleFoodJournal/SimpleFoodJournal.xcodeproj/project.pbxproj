@@ -13,6 +13,7 @@
 		B78877F71D6BFCB300D06DCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B78877F61D6BFCB300D06DCE /* Assets.xcassets */; };
 		B78877FA1D6BFCB300D06DCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B78877F81D6BFCB300D06DCE /* LaunchScreen.storyboard */; };
 		B7B6C4E31D6E8D9D0069187B /* JournalUITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B6C4E21D6E8D9D0069187B /* JournalUITableView.swift */; };
+		B7B6C4E51D6FF9970069187B /* TextFieldUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7B6C4E41D6FF9970069187B /* TextFieldUITableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		B78877F91D6BFCB300D06DCE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B78877FB1D6BFCB300D06DCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B7B6C4E21D6E8D9D0069187B /* JournalUITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JournalUITableView.swift; sourceTree = "<group>"; };
+		B7B6C4E41D6FF9970069187B /* TextFieldUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldUITableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				B78877EF1D6BFCB300D06DCE /* AppDelegate.swift */,
 				B78877F11D6BFCB300D06DCE /* MainViewController.swift */,
 				B78877F31D6BFCB300D06DCE /* Main.storyboard */,
+				B7B6C4E41D6FF9970069187B /* TextFieldUITableViewCell.swift */,
 				B7B6C4E21D6E8D9D0069187B /* JournalUITableView.swift */,
 				B78877F61D6BFCB300D06DCE /* Assets.xcassets */,
 				B78877F81D6BFCB300D06DCE /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				B78877F21D6BFCB300D06DCE /* MainViewController.swift in Sources */,
 				B78877F01D6BFCB300D06DCE /* AppDelegate.swift in Sources */,
 				B7B6C4E31D6E8D9D0069187B /* JournalUITableView.swift in Sources */,
+				B7B6C4E51D6FF9970069187B /* TextFieldUITableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

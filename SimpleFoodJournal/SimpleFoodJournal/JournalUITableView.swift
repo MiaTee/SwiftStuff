@@ -10,6 +10,17 @@ import UIKit
 
 class JournalUITableView: UITableView {
     
+    //This table view will show a tableview of journals
+    //first I am keeping it simple
+    //each cell will view default picture and the day of the week
+    //it will give the user add a new entry
+    //automatically each entry will contain title date of the week
     
+    //1)-you need viewDidLoad
+     func viewDidLoad() {
+        
+    }
+    
+   
 
 }
